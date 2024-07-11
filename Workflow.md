@@ -68,7 +68,7 @@ for f in filenames:
     print(molecule_name)
 
     # Read the data
-    t = Tree(f)
+    t = Tree(f) #or Tree(f, format=1) #format=1 is flexible with internal node names
     ##print(t.write())
     t.render(molecule_name, w=80, h=700, units="mm")
 
