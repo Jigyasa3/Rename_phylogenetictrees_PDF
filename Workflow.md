@@ -70,6 +70,8 @@ for f in filenames:
     # Read the data
     t = Tree(f) #or Tree(f, format=1) #format=1 is flexible with internal node names
     ##print(t.write())
-    t.render(molecule_name, w=80, h=700, units="mm")
+    t.render(molecule_name, w=80, h=700, units="mm") #for large files
+    #t.render(molecule_name, w=50, h=80, units="mm") #for small files
 
+#NOTE-If you use the "w=80 & h=700" on small files it generates a very pixilated version. So try a smaller width and height!
 ```
